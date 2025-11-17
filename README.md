@@ -7,6 +7,7 @@ Ele inclui **plano de teste, casos de teste, evidências e relatório de execuç
 Este repositório é complementar ao repositório da API em si (https://github.com/mariahinada/mock-user-api), servindo exclusivamente para QA e documentação de testes.
 
 ## Estrutura do Repositório
+```text
 .
 ├── README.md
 ├── docs
@@ -23,6 +24,7 @@ Este repositório é complementar ao repositório da API em si (https://github.c
 │   └── relatorio-de-testes.md
 └── manual-tests
     └── casos-de-teste.md
+```
 
 ### 1. Pré-requisitos
 - Ter a **Mock User API** rodando localmente: `http://localhost:3001` (instrução no rep. da api mencionado anteriormente)
