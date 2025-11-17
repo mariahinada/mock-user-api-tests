@@ -1,6 +1,6 @@
 # Casos de Teste - Mock User API
 
-# 1. GET/users - Deve listar usuários existentes
+## (CT-001) GET/users - Deve listar usuários existentes
 
 Objetivo: Validar que a API retorna a lista completa de usuários.
 
@@ -16,7 +16,7 @@ Resultado esperado:
 - Corpo contendo a lista de usuários
 - Cada usuário com os campos: *id*, *name*, *company*, *email*, *isActive*
 
-# 2. POST/users - Deve criar usuário com dados válidos
+## (CT-002) POST/users - Deve criar usuário com dados válidos
 
 Objetivo: Validar a criação de um novo usuário.
 
@@ -35,7 +35,7 @@ Resultado esperado:
 - *id* gerado automaticamente
 - *isActive* padrão = true
 
-# 3. POST /users — Deve retornar erro ao enviar body vazio
+# (CT-003) POST /users — Deve retornar erro ao enviar body vazio
 
 Objetivo: Validar regras de preenchimento mínimo.
 
@@ -46,7 +46,7 @@ Resultado esperado:
 - Status 400
 - Mensagem indicando campos obrigatórios ausentes.
 
-# 4. GET /users/:id — Deve retornar um usuário existente
+## (CT-004) GET /users/:id — Deve retornar um usuário existente
 
 Objetivo: Validar consulta por ID.
 
@@ -61,7 +61,7 @@ Resultado esperado:
 - Status 200
 - Dados exatamente iguais aos criados no POST.
 
-# 5. GET /users/:id — Deve retornar 404 para ID inexistente
+## (CT-005) GET /users/:id — Deve retornar 404 para ID inexistente
 
 Objetivo: Validar comportamento esperado para IDs não encontrados.
 
@@ -72,7 +72,7 @@ Resultado esperado:
 Status 404
 Mensagem de “Usuário não encontrado”.
 
-# 6. PUT /users/:id — Deve atualizar os dados de um usuário
+## (CT-006) PUT /users/:id — Deve atualizar os dados de um usuário
 
 Objetivo: Validar atualização parcial ou total.
 
@@ -91,7 +91,7 @@ Resultado esperado:
 - Mensagem de sucesso
 - Campo alterado refletido no objeto retornado.
 
-# 7. DELETE /users/:id — Deve deletar usuário existente
+## (CT-007) DELETE /users/:id — Deve deletar usuário existente
 
 Objetivo: Validar remoção de usuário.
 

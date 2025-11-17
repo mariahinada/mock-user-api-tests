@@ -34,7 +34,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3001/users",
+					"raw": "http://localhost:3001/users/:id",
 					"protocol": "http",
 					"host": [
 						"localhost"
