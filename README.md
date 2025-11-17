@@ -1,7 +1,7 @@
 # Mock User API — Testes Manuais
 
 ## Descrição do Repositório
-Este repositório contém os testes manuais da **Mock User API**, uma API REST simples para gerenciar usuários (GET, POST, PUT, DELETE).  
+Este repositório contém os testes manuais da **Mock User API**, uma API REST simples para gerenciar usuários (``GET``, ``POST``, ``PUT``, ``DELETE``).  
 Ele inclui **plano de teste, casos de teste, evidências e relatório de execução**, com o objetivo de documentar e validar o comportamento da API.
 
 Este repositório é complementar ao repositório da API em si (https://github.com/mariahinada/mock-user-api), servindo exclusivamente para QA e documentação de testes.
