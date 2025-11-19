@@ -1,6 +1,6 @@
 # Relatório de Testes – Mock User API
 
-**Data:** 16/11/1999  
+**Data:** 16/11/2025  
 **Responsável:** Mariah Inada
 **Ambiente:** Localhost (Node.js em http://localhost:3001)  
 
