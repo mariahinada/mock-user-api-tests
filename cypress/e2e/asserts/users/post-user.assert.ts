@@ -1,4 +1,4 @@
-class PostUserAsserts {
+class PostUserAssert {
   assertStatusCode(response, expectedStatus = 201) {
     expect(response.status).to.eq(expectedStatus);
   }
@@ -29,4 +29,4 @@ class PostUserAsserts {
   }
 }
 
-export const postUserAsserts = new PostUserAsserts();
+export const postUserAssert = new PostUserAssert();
