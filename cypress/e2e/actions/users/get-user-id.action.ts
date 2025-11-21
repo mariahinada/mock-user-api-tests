@@ -1,7 +1,7 @@
 import { getUserService } from "../../services/users/get-user.service";
 import { getUserByIdAssert } from "../../asserts/users/get-user-id.assert";
 
-class GetUserByIdActions {
+class GetUserByIdAction {
   getValidUserById(userId: string) {
     return getUserService.getUserById(userId).then((response) => {
       getUserByIdAssert.assertStatusCode(response);
@@ -19,4 +19,4 @@ class GetUserByIdActions {
   }
 }
 
-export const getUserByIdActions = new GetUserByIdActions();
+export const getUserByIdAction = new GetUserByIdAction();

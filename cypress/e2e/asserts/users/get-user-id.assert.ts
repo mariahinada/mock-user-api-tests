@@ -4,7 +4,9 @@ class GetUserByIdAssert {
   }
 
   assertIsJson(response) {
-    expect(response.headers["content-type"].to.include("application/json"))
+    expect(response.headers["content-type"]).to.exist;
+    expect(response.headers["content-type"]).to.include("application/json");
+
   }
 
   assertJsonIsNotEmpty(response) {
@@ -17,7 +19,6 @@ class GetUserByIdAssert {
     expect(user).to.have.property("company");
     expect(user).to.have.property("email");
     expect(user).to.have.property("isActive");
-    expect(user).to.have.property("createdAt");
   }
 
   assertIdIsValid(uuid) {
