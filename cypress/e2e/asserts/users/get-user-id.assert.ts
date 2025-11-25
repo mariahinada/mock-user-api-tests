@@ -4,8 +4,8 @@ class GetUserByIdAssert {
   }
 
   assertIsJson(response) {
-    expect(response.headers["content-type"]).to.exist;
-    expect(response.headers["content-type"]).to.include("application/json");
+    expect(response.headers).to.have.property("content-type")
+    expect(response.headers["content-type"]).to.include("application/json")
 
   }
 
