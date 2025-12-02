@@ -10,28 +10,34 @@ Este repositório é complementar ao repositório da API em si (https://github.c
 
 ## Estrutura do repositório
 ```text
+├── .DS_Store
 ├── .gitattributes
 ├── .gitignore
 ├── cypress
 │  ├── e2e
 │  │  ├── actions
 │  │  │  └── users
+│  │  │    ├── delete-user.action.ts
 │  │  │    ├── get-user-id.action.ts
 │  │  │    ├── get-users.action.ts
 │  │  │    ├── post-user.action.ts
 │  │  │    └── put-user.action.ts
 │  │  ├── asserts
+│  │  │  ├── .DS_Store
 │  │  │  └── users
+│  │  │    ├── delete-user-assert.ts
 │  │  │    ├── get-user-id.assert.ts
 │  │  │    ├── get-users.assert.ts
 │  │  │    ├── post-user.assert.ts
 │  │  │    └── put-user.assert.ts
 │  │  ├── services
 │  │  │  └── users
+│  │  │    ├── delete-user.service.ts
 │  │  │    ├── get-user.service.ts
 │  │  │    ├── post-user.service.ts
 │  │  │    └── put-user.service.ts
 │  │  └── users
+│  │    ├── delete-user.cy.ts
 │  │    ├── get-user-id.cy.ts
 │  │    ├── get-users.cy.ts
 │  │    ├── post-user.cy.ts
@@ -39,6 +45,7 @@ Este repositório é complementar ao repositório da API em si (https://github.c
 │  ├── fixtures
 │  │  └── users
 │  │    └── valid-user.json
+│  ├── screenshots
 │  ├── support
 │  │  ├── commands.ts
 │  │  └── e2e.js
@@ -63,7 +70,9 @@ Este repositório é complementar ao repositório da API em si (https://github.c
 ├── package.json
 ├── README.md
 └── tests
+  ├── .DS_Store
   └── manual
+    ├── .DS_Store
     └── casos-de-teste.md
 ```
 ## Como executar os testes automatizados
@@ -87,10 +96,10 @@ npx Cypress run
 ## Arquitetura dos testes automatizados
 
 Os testes seguem o padrão:
-1. `Service` - faz a request
-2. `Assert` - faz as validações
-3. `Action` - orquestra e organiza o fluxo
-4. `Teste` - onde tudo é enfim chamado 
+1. `Services` - faz a request
+2. `Asserts` - faz as validações
+3. `Actions` - orquestra e organiza o fluxo
+4. `Testes` - onde tudo é enfim chamado 
 
 ## Como executar os testes manuais
 ### 1. Pré-requisitos
